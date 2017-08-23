@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangeBackground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,107 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlz-qK-fWd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-Dy-Xdy">
+                                <rect key="frame" x="162" y="130" width="51" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thk-X2-RvU">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
+                                        <state key="normal" title="Red"/>
+                                        <connections>
+                                            <action selector="setRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rb8-EN-y8i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGe-JZ-Ymv">
+                                        <rect key="frame" x="0.0" y="47" width="51" height="30"/>
+                                        <state key="normal" title="Orange"/>
+                                        <connections>
+                                            <action selector="setOrange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TaF-20-sRQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmG-t4-28J">
+                                        <rect key="frame" x="0.0" y="94" width="51" height="30"/>
+                                        <state key="normal" title="Yellow"/>
+                                        <connections>
+                                            <action selector="setYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qvB-Ai-7zc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwh-xp-X6c">
+                                        <rect key="frame" x="0.0" y="141" width="51" height="30"/>
+                                        <state key="normal" title="Green"/>
+                                        <connections>
+                                            <action selector="setGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Mq-gz-I3Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgZ-KA-kHu">
+                                        <rect key="frame" x="0.0" y="188" width="51" height="30"/>
+                                        <state key="normal" title="Blue"/>
+                                        <connections>
+                                            <action selector="setBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KG6-Hc-yu0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-pb-iqk">
+                                        <rect key="frame" x="0.0" y="235" width="51" height="30"/>
+                                        <state key="normal" title="Purple"/>
+                                        <connections>
+                                            <action selector="setPurple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HPe-yl-6V8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvE-aJ-xUe">
+                                        <rect key="frame" x="0.0" y="282" width="51" height="30"/>
+                                        <state key="normal" title="Cyan"/>
+                                        <connections>
+                                            <action selector="setCyan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltr-rV-xmQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z72-XV-Ynf">
+                                        <rect key="frame" x="0.0" y="329" width="51" height="30"/>
+                                        <state key="normal" title="Gray"/>
+                                        <connections>
+                                            <action selector="setGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoA-KD-leg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv5-x2-nH8">
+                                        <rect key="frame" x="0.0" y="376" width="51" height="30"/>
+                                        <state key="normal" title="Black"/>
+                                        <connections>
+                                            <action selector="setBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9u-MR-8ai"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click a button to change the background color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-FR-9Xt">
+                                <rect key="frame" x="27" y="48" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="background" destination="dlz-qK-fWd" id="TqV-3X-TrL"/>
+                        <outlet property="blackBtn" destination="iv5-x2-nH8" id="WRs-td-dUS"/>
+                        <outlet property="blueBtn" destination="GgZ-KA-kHu" id="LKc-5U-mwt"/>
+                        <outlet property="cyanBtn" destination="xvE-aJ-xUe" id="Ky5-SD-jlI"/>
+                        <outlet property="grayBtn" destination="Z72-XV-Ynf" id="LTp-fH-uQ6"/>
+                        <outlet property="greenBtn" destination="Mwh-xp-X6c" id="Wp3-cG-es9"/>
+                        <outlet property="orangeBtn" destination="TGe-JZ-Ymv" id="UDc-ip-bGD"/>
+                        <outlet property="purpleBtn" destination="KC8-pb-iqk" id="ngb-sb-KCO"/>
+                        <outlet property="redBtn" destination="Thk-X2-RvU" id="cKB-Og-QMQ"/>
+                        <outlet property="titleLabel" destination="l6I-FR-9Xt" id="duw-GE-QZA"/>
+                        <outlet property="yellowBtn" destination="ZmG-t4-28J" id="dAy-pr-sLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
