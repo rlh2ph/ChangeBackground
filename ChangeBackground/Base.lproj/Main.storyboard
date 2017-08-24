@@ -92,6 +92,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z72-XV-Ynf" firstAttribute="top" secondItem="xvE-aJ-xUe" secondAttribute="bottom" constant="17" id="3Ry-wf-lzE"/>
+                                    <constraint firstItem="ZmG-t4-28J" firstAttribute="top" secondItem="TGe-JZ-Ymv" secondAttribute="bottom" constant="17" id="4dw-lw-K8o"/>
+                                    <constraint firstItem="TGe-JZ-Ymv" firstAttribute="top" secondItem="Thk-X2-RvU" secondAttribute="bottom" constant="17" id="AZh-4B-Ncz"/>
+                                    <constraint firstItem="xvE-aJ-xUe" firstAttribute="top" secondItem="KC8-pb-iqk" secondAttribute="bottom" constant="17" id="JtX-4f-wSl"/>
+                                    <constraint firstItem="Mwh-xp-X6c" firstAttribute="top" secondItem="ZmG-t4-28J" secondAttribute="bottom" constant="17" id="SIa-EY-VwC"/>
+                                    <constraint firstItem="KC8-pb-iqk" firstAttribute="top" secondItem="GgZ-KA-kHu" secondAttribute="bottom" constant="17" id="WOf-sU-ha0"/>
+                                    <constraint firstItem="GgZ-KA-kHu" firstAttribute="top" secondItem="Mwh-xp-X6c" secondAttribute="bottom" constant="17" id="kMB-2x-zae"/>
+                                    <constraint firstItem="Thk-X2-RvU" firstAttribute="top" secondItem="MKr-Dy-Xdy" secondAttribute="top" id="sYX-iu-Sw4"/>
+                                    <constraint firstItem="iv5-x2-nH8" firstAttribute="top" secondItem="Z72-XV-Ynf" secondAttribute="bottom" constant="17" id="vvL-tO-XkL"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click a button to change the background color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-FR-9Xt">
                                 <rect key="frame" x="26" y="48" width="323" height="18"/>
